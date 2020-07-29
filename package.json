@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/gonghaima/nodeexpress-1#readme",
   "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@babel/node": "^7.10.5",
     "nodemon": "^2.0.4"
   }
 }
