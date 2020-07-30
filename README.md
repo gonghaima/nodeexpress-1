@@ -7,3 +7,7 @@ curl after express added
 ```shell
 curl --location --request GET "localhost:3000"
 ```
+
+```shell
+curl --location --request DELETE "localhost:3000"
+```
