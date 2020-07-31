@@ -21,3 +21,11 @@ curl --location --request GET "localhost:3000/users"
 ```shell
 curl --location --request GET "localhost:3000/users/2"
 ```
+
+```shell
+curl --location --request GET "localhost:3000/messages"
+```
+
+```shell
+curl --location --request GET "localhost:3000/messages/2"
+```

@@ -42,6 +42,14 @@ app.get('/users/:userId', (req, res) => {
     return res.send(users[req.params.userId]);
 });
 
+app.get('/messages', (req, res) => {
+    return res.send(Object.values(messages));
+});
+
+app.get('/messages/:messageId', (req, res) => {
+    return res.send(messages[req.params.messageId]);
+});
+
 app.post('/', (req, res) => {
     return res.send('Received a POST HTTP method');
 });
