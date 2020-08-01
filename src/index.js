@@ -1,6 +1,7 @@
 import express from 'express';
 import cors from 'cors';
 import 'dotenv/config';
+import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 
@@ -52,6 +53,17 @@ app.get('/messages/:messageId', (req, res) => {
 
 app.post('/', (req, res) => {
     return res.send('Received a POST HTTP method');
+});
+
+app.post('/messages', (req, res) => {
+    const id = uuidv4();
+    const message = {
+        id,
+    };
+
+    messages[id] = message;
+
+    return res.send(message);
 });
 
 app.put('/', (req, res) => {
